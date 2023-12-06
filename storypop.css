@@ -1,0 +1,70 @@
+.storypopup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #f1f1f1;
+    z-index: 9999;
+    width: 80vh;
+    height: 80vh;
+    background-color: #f1f1f1;
+    padding: 30px 30px 30px 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden; /* Hide overflow if the image is larger than the container */
+  }
+
+  
+
+  .story-container {
+    width:77vh;
+    height: 80vh;
+    background-color: white;
+    padding: 16px 20px 20px 20px;
+    position:absolute; 
+  }
+  
+  #storyname {
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+  }
+
+  #bigstorybox {
+    overflow-y: auto;
+    padding: 5px 5px 5px 5px;
+  }
+  
+  #storybox {
+    padding: 5px 5px 5px 5px;
+    margin: auto;
+    max-width: 95%; 
+    max-height: 95%;
+    width: 70vh;
+    height: 70vh;
+    text-align: justify;
+  }
+  
+  /* Close button styling */
+  .btn.cancel {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f7f7fb;
+    color: rgb(0, 0, 0);
+    padding: 10px white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    
+  }
+  
+  /* Add some hover effects to buttons */
+  .story-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }
+  

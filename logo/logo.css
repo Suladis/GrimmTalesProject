@@ -1,0 +1,84 @@
+.bg {
+    background: #4b4c4d;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -8px;
+  }
+
+  .logo {
+    position:relative;
+    height:60px;
+    width:700px;
+    margin-left: 42vw;
+    margin-bottom: 15vh;
+
+  }
+
+  .logotext {
+    font-family: 'Fairy Tale', sans-serif;
+    color: rgb(10, 10, 10);
+    font-size:100px;
+    
+    @-webkit-keyframes: fadeIn 5s linear forwards;
+    animation: fadeOut 5s linear forwards;
+                                                
+  }
+
+  @-webkit-keyframes fadeIn {
+    0%,100%{ opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+  @keyframes fadeOut {
+    0%,100% { opacity: 0; }
+    5% { opacity: 1; }
+  }
+  
+  .book1, .book2 {
+    position: relative;
+    height: 30px;
+    width: 140px;
+    border: 5px solid #942343;
+    margin-left: 42vw;
+    border-radius: 10px 0 0 10px;
+    border-right-style: none;
+    background: #fffff0;
+    @-webkit-keyframes: fadeIn 5s linear forwards;
+    animation: fadeOut 5s linear forwards;
+  }
+  
+  .book1 {
+    border-radius: 10px 0 0 0px;
+    border-bottom: 0px #fffff0;
+    animation: openBook 3s linear forwards;
+    animation-duration: 3s;
+    @-webkit-keyframes: fadeIn 5s linear forwards;
+    animation: fadeOut 5s linear forwards;
+  }
+  
+  .book2 {
+    border-radius: 0px 0 0 10px;
+    border-top: 0px #fffff0;
+    @-webkit-keyframes: fadeIn 5s linear forwards;
+    animation: fadeOut 5s linear forwards;
+  }
+
+  @keyframes openBook {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: bottom left;
+    }
+    50% {
+      transform: rotate(-90deg);
+      transform-origin: bottom left;
+    }
+    100% {
+      transform: rotate(-180deg);
+      transform-origin: bottom left;
+    }
+  }
+

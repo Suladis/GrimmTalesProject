@@ -1,0 +1,23 @@
+{
+    "stories": [
+      {
+        "id":"1",
+        "title": "The Frog King",
+        "text_file_path": "stories/tales/frogKing.txt",
+        "background_image": "stories/talesbg/frogking.jpg"
+      },
+      {
+        "id":"3",
+        "title": "Mystery of the Enchanted Forest",
+        "text_file_path": "stories/tales/enchanted_forest_story.txt",
+        "background_image": "stories/talesbg/enchanted_forest_background.jpg"
+      },
+      {
+        "id":"3",
+        "title": "Journey to the Unknown",
+        "text_file_path": "stories/tales/unknown_journey_story.txt",
+        "background_image": "stories/talesbg/unknown_journey_background.jpg"
+      }
+    ]
+  }
+  

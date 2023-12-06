@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map of Tales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="storypop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="script.js"></script> 
+    <script src="storypop.js"></script> 
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Wonderful World of Grimm Tales</h1>
+    </header>
+
+    <!-- Navigation and Main Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="stories.html">Story Library</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="#">Modern Works</a></li>
+            <li><a href="#">Discussion</a></li>
+            <li><a href="#" onclick="openForm()">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+      
+        <div id="map-container" class="aspect-ratio">
+            
+
+        <div  id="map" >
+            
+
+<img src="map.webp" alt="TaleMap" usemap="#talemap">
+
+
+<map name="talemap">
+    <area shape="rect" coords="880,2270,1000,2340" alt="snowWhite" onclick="storypop(3)">
+    <area shape="rect" coords="950,1740,1070,1831" alt="snowWhite" onclick="storypop(2)">
+
+
+ 
+
+</map>
+
+
+        
+    
+
+        </div>
+    </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 WWGT.</p>
+    </footer>
+
+    <!-- Contact Us Form popup -->
+
+
+    <!-- Story Popup -->
+        <!-- Story Popup -->
+<div class="storypopup" id="storyid">
+    <div action="" class="story-container">
+        <div id="storycon">
+            <div id="storyname">
+                <h1>Story Name</h1>
+            </div>
+            <div id="bigstorybox">
+                <div id="storybox">
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <button type="button" class="btn cancel" onclick="closeStoryPop()">Close</button>
+  </div>
+
+  <script>
+    window.onload=function(){
+        closeStoryPop();
+    }
+  </script>
+
+</body>
+</html>

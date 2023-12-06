@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="storypop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="script.js"></script> 
+    <script src="storypop.js"></script> 
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Wonderful World of Grimm Tales</h1>
+    </header>
+
+    <!-- Navigation and Main Section -->
+    <nav>
+        <ul>
+            <li id="home"><a href="index.html">Homepage</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="#">Modern Works</a></li>
+            <li><a href="#">Discussion</a></li>
+            <li><a href="#" onclick="openForm()">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+      
+
+        <div class="container">
+            
+            <h1 class="top-stories"> Stories </h1>
+            
+            <div class="row">
+                
+             <!-- Story Box 1 -->
+             <div class="story">
+                <div class="image-box">
+                    <img src="/stories/talecover/link1.gif" alt="Link 1">
+                </div>
+                <div class="description" id="story1">
+                    <p>The Frog Prince</p>
+                    <div class="actions">
+                        <button class="view-btn" onclick="storypop(1)">Read</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Box 2 -->
+            <div class="story">
+                <div class="image-box">
+                    <img src="/stories/talecover/cind.jpg" alt="Link 1">
+                </div>
+                <div class="description" id="story1">
+                    <p>Cinderella</p>
+                    <div class="actions">
+                        <button class="view-btn" onclick="storypop(2)">Read</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Story Box 3 -->
+             <div class="story">
+                <div class="image-box">
+                    <img src="/stories/talecover/snow.jpg" alt="Link 1">
+                </div>
+                <div class="description" id="story1">
+                    <p>Snow White</p>
+                    <div class="actions">
+                        <button class="view-btn" onclick="storypop(1)">Read</button>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Story Box 4 -->
+              <div class="story">
+                <div class="image-box">
+                    <img src="/stories/talecover/father.jpg" alt="Link 1">
+                </div>
+                <div class="description" id="story1">
+                    <p>Grandfather Death</p>
+                    <div class="actions">
+                        <button class="view-btn" onclick="storypop(4)">Read</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Box 5 -->
+            <div class="story">
+                <div class="image-box">
+                    <img src="/stories/talecover/lred.jpg" alt="Link 1">
+                </div>
+                <div class="description" id="story1">
+                    <p>Little Red</p>
+                    <div class="actions">
+                        <button class="view-btn" onclick="storypop(5)">Read</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Story Box 6 -->
+             <div class="story">
+                <div class="image-box">
+                    <img src="/stories/talecover/catmouse.jpg" alt="Link 1">
+                </div>
+                <div class="description" id="story1">
+                    <p>Cat and Mouse</p>
+                    <div class="actions">
+                        <button class="view-btn" onclick="storypop(6)">Read</button>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+            <div class="row">
+                
+            </div>
+        
+    
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 WWGT.</p>
+    </footer>
+
+    <!-- Story Popup -->
+<div class="storypopup" id="storyid">
+    <div action="" class="story-container">
+        <div id="storycon">
+            <div id="storyname">
+                <h1>Story Name</h1>
+            </div>
+            <div id="bigstorybox">
+                <div id="storybox">
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <button type="button" class="btn cancel" onclick="closeStoryPop()">Close</button>
+  </div>
+
+  <script>
+    window.onload=function(){
+        closeStoryPop();
+    }
+  </script>
+
+</body>
+</html>

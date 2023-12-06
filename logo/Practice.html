@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Selectors Example</title>
+<style>
+ p
+ {
+ font-size: 25px;
+ }
+ .p1
+ {
+ border: 2px solid blue;
+ font-size: 25px;
+ color: black;
+ text-align: center;
+ }
+ #p2
+ {
+ border: 2px solid #673ab7;
+ font-size: 25px;
+ color: black;
+ text-align: justify;
+ }
+ h2
+ {
+ color: blue;
+ }
+
+ ul {
+    border: 30px dotted sandybrown;
+ }
+
+ ul >li {
+    border: 10px solid palegoldenrod;
+    font-size: 30px;
+ }
+
+ [type=text] {
+    border: 25px solid blue;
+    
+ }
+
+
+</style>
+</head>
+<body>
+ <h2>Element Selector</h2>
+<p>We give font color "blue" to all heading tags</p>
+ <h2>Id Selector</h2>
+ <p id = "p2">With the help of id selector, we give background
+color "purple" and font color "black" to specific paragraph. </p>
+ <h2>Class Selector</h2>
+ <p class = "p1">With the help of class selector, we give border
+color "blue" and font color "black" to this specific paragraph.
+</p>
+ <p class = "p1">This is another paragraph in class selector, you
+will notice that both paragraphs written in class selectors have
+same styles. </p>
+
+<ul>
+    <li type="text"> Hello</li>
+    <li> Welcome</li>
+    <li> Bye</li>
+    <ol> <li>
+        GoodBye
+    </li></ol>
+</ul>
+</body>
+</html>
