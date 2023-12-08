@@ -15,7 +15,7 @@ function submitForm() {
   console.log("Story Name:", storyName);
   console.log("Comments:", comments);
 
-  // Create an object with the form data
+  // Form data
   var formData = {
     email: email,
     storyName: storyName,

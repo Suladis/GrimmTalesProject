@@ -222,3 +222,13 @@ footer p {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.form-popup {
+    min-width: 500px;
+    min-height: 500px;
+}
+
+.form-container {
+    width: auto;
+    height: auto;
+}

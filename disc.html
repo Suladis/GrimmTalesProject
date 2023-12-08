@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./storypop.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+    <script src="/script.js"></script> 
+    <script src="/storypop.js"></script> 
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Wonderful World of Grimm Tales</h1>
+    </header>
+
+    <!-- Navigation and Main Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="stories.html">Story Library</a></li>
+            <li><a href="map.html">Map of Tales</a></li>
+            <li><a href="history.html">History</a></li>
+            <li hidden><a href="#">Modern Works</a></li>
+            <li><a href="#">Discussion</a></li>
+            <li><a href="#" onclick="openForm()">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+      
+
+        <div class="container">
+            <div id="email"></div>
+            <div id="storyName"></div>
+            <div id="comments"></div>
+            
+        </div>
+        <div class="container">
+        
+    
+        </div>
+        <div class="container">
+        
+    
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 WWGT.</p>
+    </footer>
+
+    <!-- Contact Us Form popup -->
+<div class="form-popup" id="myForm">
+    <form action="" class="form-container">
+      <h1>Contact Us:</h1>
+  
+      <label for="email"><b>Email:</b></label>
+      <br>
+      <input type="email" placeholder="Enter Email" name="email" required>
+      <br>
+      <label for="email"><b>Story Name:</b></label>
+      <br>
+      <input type="text" placeholder="Name of Story" name="storyname" rows="5" required>
+      <br>
+      <label for="email"><b>Comments:</b></label>
+      <br>
+      <input type="text" placeholder="Please Enter Your Comments" name="comments" required>
+    
+      <button type="button" class="btn" onclick="submitForm()" id="submit-form">Submit Form</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+</body>
+</html>
