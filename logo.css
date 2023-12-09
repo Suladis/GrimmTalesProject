@@ -1,0 +1,35 @@
+.bg {
+  background: #f4f4f4;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  background-image: url('giphy.gif');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 9999;
+}
+
+.logotext {
+  font-family: 'Fairy Tale', sans-serif;
+  color: rgb(241, 236, 236);
+  font-size: 120px; /* Adjust the font size as needed */
+  text-align: center; /* Center the text horizontally */
+  line-height: 1.2; /* Improve vertical centering */
+  animation: fadeIn 5s linear forwards;
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

@@ -15,6 +15,7 @@ body {
     color: #332f2c;
     background-color: #f4f4f4;
     padding: 20px;
+    background-image: url('/stories/talesbg/frogking.jpg');
 }
 
 header, nav, main, footer {
@@ -146,9 +147,8 @@ main {
 
 /* Image styling */
 .image-box {
-    overflow: hidden; /* Ensures the image doesn't spill outside its container */
-    height: 200px; /* Set a fixed height for all images */
-    
+    overflow: hidden; 
+    height: 200px;
 }
 
 /* Image styling */
@@ -158,8 +158,8 @@ main {
     max-height: 200px; /* Set a fixed max-height for all images */
     width: auto;
     height: auto;
-    margin: 0 auto; /* Center the image horizontally */
-    object-fit: cover; /* Ensures the image covers the entire container */
+    margin: 0 auto; 
+    object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }

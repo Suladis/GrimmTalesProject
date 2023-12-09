@@ -37,3 +37,7 @@ function submitForm() {
   closeForm();
   
 }
+
+setTimeout(function() {
+  $('.bg').fadeOut('fast');
+}, 2000); // <-- time in milliseconds
