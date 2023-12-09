@@ -39,12 +39,31 @@ var stories = [
 ];
 
 function storypop(value) {
-  document.getElementById("storyid").style.display = "block";
-  writeStory(value);
+  var storyidElement = document.getElementById("storyid");
+  if (storyidElement) {
+    storyidElement.style.display = "block";
+    storyidElement.setAttribute("aria-hidden", "false");
+    writeStory(value);
+    setFocusToStoryPopup();
+  }
 }
 
 function closeStoryPop() {
-  document.getElementById("storyid").style.display = "none";
+  var storyidElement = document.getElementById("storyid");
+  if (storyidElement) {
+    storyidElement.style.display = "none";
+    storyidElement.setAttribute("aria-hidden", "true");
+  }
+}
+
+function setFocusToStoryPopup() {
+  var storyidElement = document.getElementById("storyid");
+  if (storyidElement) {
+    var firstFocusableElement = storyidElement.querySelector("button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])");
+    if (firstFocusableElement) {
+      firstFocusableElement.focus();
+    }
+  }
 }
 
 function writeStory(value) {

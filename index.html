@@ -100,27 +100,32 @@
         <p>&copy; 2023 WWGT.</p>
     </footer>
 
-    <!-- Contact Us Form popup -->
+   <!-- Contact Us Form popup -->
 <div class="form-popup" id="myForm">
     <form action="" class="form-container">
-      <h1>Contact Us:</h1>
-  
-      <label for="email"><b>Email:</b></label>
-      <br>
-      <input type="email" placeholder="Enter Email" name="email" required>
-      <br>
-      <label for="email"><b>Story Name:</b></label>
-      <br>
-      <input type="text" placeholder="Name of Story" name="storyname" rows="5" required>
-      <br>
-      <label for="email"><b>Comments:</b></label>
-      <br>
-      <input type="text" placeholder="Please Enter Your Comments" name="comments" required>
-    
-      <button type="button" class="btn" onclick="submitForm()" id="submit-form">Submit Form</button>
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <h1>Contact Us:</h1>
+
+        <label for="email"><b>Email:</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="storyname"><b>Story Name:</b></label>
+        <input type="text" placeholder="Name of Story" name="storyname" required>
+
+        <label for="comments"><b>Comments:</b></label>
+        <textarea placeholder="Please Enter Your Comments" name="comments" required></textarea>
     </form>
-  </div>
+
+    <div class="formbtns">
+        <div class="btncont">
+            <button type="button" class="submit-btn" onclick="submitForm()" id="submit-form">Submit Form</button>
+        </div>
+        <div class="btncont">
+            <button type="button" class="btncancel" onclick="closeForm()">Close</button>
+        </div>
+    </div>
+    <h1>We will do our best to respond in a reasonable timeframe. Thank you for your input.</h1>
+</div>
+
 
 <!-- Story Popup -->
 <div class="storypopup" id="storyid">

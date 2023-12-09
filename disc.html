@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="./storypop.css">
+    <link rel="stylesheet" href="./disc.css">
+    <link rel="stylesheet" href="./contact.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
     <script src="/script.js"></script> 
     <script src="/storypop.js"></script> 
@@ -26,24 +27,37 @@
             <li><a href="stories.html">Story Library</a></li>
             <li><a href="map.html">Map of Tales</a></li>
             <li><a href="history.html">History</a></li>
-            <li><a href="#">Discussion</a></li>
             <li><a href="#" onclick="openForm()">Contact Us</a></li>
         </ul>
     </nav>
     <main>
       
+        <div class="headerdisc">
+            <h1>Welcome to Our Discussion Page!</h1>
+            <p>Feel free to share your thoughts, ideas, and engage in respectful conversations.</p>
+        </div>
 
         <div class="container">
             
         </div>
-        <div class="container">
-        
+
+        <div class="commentsection">
+
+        <form action="" class="form-container">
     
-        </div>
-        <div class="container">
-        
+            <label for="name"><b>Name:</b></label>
+            <input type="name" placeholder="Enter Name" name="name" required>
     
+            <label for="usercomments"><b>Comment:</b></label>
+            <textarea placeholder="Please Enter Your Comments" name="usercomments" required></textarea>
+        </form>
+    
+        <div class="formbtns">
+            <div class="btncont">
+                <button type="button" class="submit-com" onclick="subCom()" id="submitCom">Submit Form</button>
+            </div>
         </div>
+    </div>
     </main>
 
 

@@ -24,7 +24,7 @@
             <li><a href="index.html" id="home">Homepage</a></li>
             <li><a href="map.html">Map</a></li>
             <li><a href="history.html">History</a></li>
-            <li><a href="#">Discussion</a></li>
+            <li><a href="disc.html">Discussion</a></li>
             <li><a href="#" onclick="openForm()">Contact Us</a></li>
         </ul>
     </nav>
@@ -132,29 +132,53 @@
     </footer>
 
     <!-- Story Popup -->
-<div class="storypopup" id="storyid">
+<!-- Story Popup -->
+<div class="storypopup" id="storyid" aria-hidden="true" role="dialog" aria-labelledby="storyname">
     <div action="" class="story-container">
         <div id="storycon">
             <div id="storyname">
                 <h1>Story Name</h1>
             </div>
             <div id="bigstorybox">
-                <div id="storybox">
-                </div>
+                <div id="storybox"></div>
             </div>
-
         </div>
-
-
     </div>
-    <button type="button" class="btn cancel" onclick="closeStoryPop()">Close</button>
-  </div>
+    <button type="button" class="btn cancel" onclick="closeStoryPop()" aria-label="Close Story Popup">Close</button>
+</div>
+  <!-- Contact Us Form popup -->
+  <div class="form-popup" id="myForm">
+    <form action="" class="form-container">
+        <h1>Contact Us:</h1>
+
+        <label for="email"><b>Email:</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="storyname"><b>Story Name:</b></label>
+        <input type="text" placeholder="Name of Story" name="storyname" required>
+
+        <label for="comments"><b>Comments:</b></label>
+        <textarea placeholder="Please Enter Your Comments" name="comments" required></textarea>
+    </form>
+
+    <div class="formbtns">
+        <div class="btncont">
+            <button type="button" class="submit-btn" onclick="submitForm()" id="submit-form">Submit Form</button>
+        </div>
+        <div class="btncont">
+            <button type="button" class="btncancel" onclick="closeForm()">Close</button>
+        </div>
+    </div>
+    <h1>We will do our best to respond in a reasonable timeframe. Thank you for your input.</h1>
+</div>
+
 
   <script>
     window.onload=function(){
         closeStoryPop();
     }
   </script>
+
 
 </body>
 </html>

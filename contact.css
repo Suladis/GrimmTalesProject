@@ -1,54 +1,81 @@
-/* The popup form - hidden by default */
+/* Form Popup */
 .form-popup {
-    display: none;
-    position: fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    border: 3px solid #f1f1f1;
-    z-index: 9999; 
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
-    max-width: 600px;
-    padding: 10px;
-    background-color: white;
-  }
-  
-  /* Full-width input fields */
-  .form-container input[type=text] {
-    width: 86%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Set a style for the submit/login button */
-  .form-container .btn {
-    background-color: #0423aa;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 45%;
-    margin-bottom:10px;
-    opacity: 0.8;
-  }
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: red;
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f1f1f1;
+  z-index: 9999;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Form Container */
+.form-container {
+  text-align: left;
+}
+
+/* Form Headers */
+.form-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Labels */
+.form-container label {
+  font-weight: bold;
+}
+
+/* Form Inputs */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Form Buttons Container */
+.formbtns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #0423aa;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 48%;
+  opacity: 0.9;
+  border-radius: 5px;
+  width:auto
+}
+.btncont{
+  width: 50%;
+  height: auto;
+
+}
+/* Cancel Button */
+.form-popup .btncancel {
+float: right;
+  background-color: #aa0425;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 48%;
+  opacity: 0.9;
+  border-radius: 5px;
+  width:auto
+}
