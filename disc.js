@@ -50,8 +50,6 @@ function subCom() {
     // Clear form fields
     document.getElementsByName('name')[0].value = "";
     document.getElementsByName('usercomments')[0].value = "";
-    location.reload();
-
+       
   }
-  
   

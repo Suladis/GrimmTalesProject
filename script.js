@@ -40,4 +40,4 @@ function submitForm() {
 
 setTimeout(function() {
   $('.bg').fadeOut('fast');
-}, 1000); // <-- time in milliseconds
+}, 3000); // <-- time in milliseconds
